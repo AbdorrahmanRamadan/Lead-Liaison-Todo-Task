@@ -19,7 +19,16 @@ class TodoController extends Controller
         try {
             return response()->json(new TodoResource(Todo::create($request->all())));
         } catch (Exception $exception) {
-            return response()->json(['exception' => $exception->getMessage()]);
+            return response()->json(['exception' => $exception->getMessage()],400);
+        }
+    }
+
+    public function show($id)
+    {
+        try {
+            return response()->json(new TodoResource(Todo::find($id)));
+        } catch (Exception $exception) {
+            return response()->json(['exception' => $exception->getMessage()],400);
         }
     }
 }
