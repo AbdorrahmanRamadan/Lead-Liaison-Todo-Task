@@ -31,4 +31,15 @@ class TodoController extends Controller
             return response()->json(['exception' => $exception->getMessage()],400);
         }
     }
+
+    public function update(Request $request, $id)
+    {
+        try {
+            $todo_to_be_updated=Todo::find($id);
+            $todo_to_be_updated->update($request->all());
+            return response()->json(['response' => 'todo updated successfully']);
+        } catch (Exception $exception) {
+            return response()->json(['exception' => $exception->getMessage()],400);
+        }
+    }
 }
