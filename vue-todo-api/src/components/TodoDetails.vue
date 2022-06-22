@@ -1,5 +1,5 @@
 <template>
-
+  <div>TodoDetails</div>
 </template>
 
 <script>
