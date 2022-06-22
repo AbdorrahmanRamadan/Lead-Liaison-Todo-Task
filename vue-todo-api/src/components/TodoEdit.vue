@@ -47,7 +47,6 @@ export default {
     update(){
       axios.put(`http://localhost:8000/api/todos/${this.todoTaskID}`, this.formValues)
           .then(()=>{this.$router.push("/todos")})
-
     }
   }
 }
