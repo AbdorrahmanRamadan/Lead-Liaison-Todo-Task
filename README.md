@@ -4,6 +4,10 @@ The following must be installed and available on your terminal:
 - [x] [composer](https://getcomposer.org/doc/00-intro.md)
 - [x] [npm](https://nodejs.org/en/)
 
+### Demo
+
+![Demo](https://user-images.githubusercontent.com/60347972/175143895-9ea1c13e-d6b7-407d-aede-39478d2674ed.gif)
+
 
 ### INSTALLATION GUIDE
 1. Clone the project
