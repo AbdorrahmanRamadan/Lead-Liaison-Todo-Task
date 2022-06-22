@@ -42,4 +42,15 @@ class TodoController extends Controller
             return response()->json(['exception' => $exception->getMessage()],400);
         }
     }
+
+    public function destroy($id)
+    {
+        try {
+            $todo_to_be_deleted=Todo::find($id);
+            $todo_to_be_deleted->delete();
+            return response()->json(['response' => 'todo deleted successfully']);
+        } catch (Exception $exception) {
+            return response()->json(['exception' => $exception->getMessage()],400);
+        }
+    }
 }
