@@ -5,7 +5,7 @@ import TodoDetails from "./components/TodoDetails";
 import TodoEdit from "./components/TodoEdit";
 import TodoAdd from "./components/TodoAdd";
 import{createRouter, createWebHistory} from 'vue-router'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const routes = [
     {
@@ -30,3 +30,5 @@ const router = createRouter({
     routes
 })
 createApp(App).use(router).mount('#app')
+
+import 'bootstrap/dist/js/bootstrap.min.js'
