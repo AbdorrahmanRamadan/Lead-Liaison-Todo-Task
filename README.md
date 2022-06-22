@@ -29,10 +29,10 @@ The following must be installed and available on your terminal:
 8. Start your development server. `php artisan serve`
 9. ``cd`` to the vue-todo-api directory and run ``npm install`` on the terminal to install its dependencies
 10. Run `npm run serve` to start your frontend server.
-11. open your web browser and go to the link provided in the terminal followed by /todos
+11. open your web browser and go to the link provided in the terminal followed by ``/todos``
 12. Congratulations, you made it!
 
-Need helps? Reach me out
+Need help? Reach me out
 >Email: AbdorrahmanRamadan@gmail.com
 >
 >Linkedin: [Abdorrahman Ramadan](https://www.linkedin.com/in/abdorrahmanramadan/)
