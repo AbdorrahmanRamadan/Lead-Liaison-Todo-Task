@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <router-link :to="`/todos/add`" class="btn btn-primary btn-sm me-1">Add a task</router-link>
     <table class="table mt-4">
       <thead class="table-dark">
       <tr>
